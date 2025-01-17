@@ -6,6 +6,6 @@ Invoke-WebRequest -Uri 'https://github.com/jrabinovitz-ideal/CrowdStrike/raw/ref
 
 Expand-Archive -LiteralPath 'c:\windows\temp\CrowdStrike_Installer\cs_installer.zip' -DestinationPath c:\windows\temp\CrowdStrike_Installer\
 
-$CS_CID = Get-Content "c:\windows\temp\CrowdStrike_Installer\cs_installer\cid.txt"
+#$CS_CID = Get-Content "c:\windows\temp\CrowdStrike_Installer\cs_installer\cid.txt"
 
-Invoke-Command -ScriptBlock {c:\windows\temp\CrowdStrike_Installer\cs_installer\FalconSensor_Windows.exe /install /quiet /norestart CID=$CS_CID}
+Invoke-Command -ScriptBlock {c:\windows\temp\CrowdStrike_Installer\cs_installer\FalconSensor_Windows.exe /install /quiet /norestart CID=5faead9a775e44ccb8432a53c6c38ef2}
