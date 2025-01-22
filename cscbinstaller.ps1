@@ -1,5 +1,3 @@
-Set-ExecutionPolicy -ExecutionPolicy Unrestricted
-
 New-Item -Path "c:\windows\temp" -Name "CrowdStrike_Installer" -ItemType "directory"
 
 Invoke-WebRequest -UseBasicParsing -Uri "https://ii.files.idealcloud.net/core/downloadfile?disposition=attachment&filename=cs_installer.zip&filepath=%2FSHARED%2F%21AJNTLj3nTsKXsn9GHQoFpQ0QhVX0W2A%2FBBST_TOOLS%2Fcs_installer.zip&redirect=1" `
