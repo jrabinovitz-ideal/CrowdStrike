@@ -13,7 +13,7 @@ Invoke-WebRequest -UseBasicParsing -Uri "https://ii.files.idealcloud.net/core/do
   "Sec-Fetch-Site" = "same-origin"
   "Sec-Fetch-User" = "?1"
   "Priority" = "u=0, i"
-} --Outfile "c:\windows\temp\CrowdStrike_Installer\cs_installer.zip"
+} -Outfile "c:\windows\temp\CrowdStrike_Installer\cs_installer.zip"
 
 Expand-Archive -LiteralPath 'c:\windows\temp\CrowdStrike_Installer\cs_installer.zip' -DestinationPath c:\windows\temp\CrowdStrike_Installer\
 
