@@ -20,3 +20,5 @@ Expand-Archive -LiteralPath 'c:\windows\temp\CrowdStrike_Installer\cs_installer.
 $CS_CID = Get-Content "c:\windows\temp\CrowdStrike_Installer\cs_installer\cid.txt"
 
 Invoke-Command -ScriptBlock {c:\windows\temp\CrowdStrike_Installer\cs_installer\FalconSensor_Windows.exe /install /quiet /norestart CID=$CS_CID}
+
+sc query csagent
